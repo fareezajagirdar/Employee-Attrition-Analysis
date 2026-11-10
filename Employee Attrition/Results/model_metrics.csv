@@ -1,0 +1,2 @@
+accuracy,precision_yes,recall_yes,f1_yes,train_records,test_records,tree_max_depth
+0.7282608695652174,0.308411214953271,0.559322033898305,0.39759036144578314,1102,368,4

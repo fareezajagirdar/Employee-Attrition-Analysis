@@ -1,0 +1,46 @@
+|--- numeric__YearsAtCompany <= 2.50
+|   |--- numeric__Age <= 39.50
+|   |   |--- numeric__StockOptionLevel <= 0.50
+|   |   |   |--- categorical__OverTime_Yes <= 0.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- categorical__OverTime_Yes >  0.50
+|   |   |   |   |--- class: 1
+|   |   |--- numeric__StockOptionLevel >  0.50
+|   |   |   |--- numeric__DailyRate <= 1331.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- numeric__DailyRate >  1331.50
+|   |   |   |   |--- class: 0
+|   |--- numeric__Age >  39.50
+|   |   |--- numeric__NumCompaniesWorked <= 8.50
+|   |   |   |--- numeric__DistanceFromHome <= 23.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- numeric__DistanceFromHome >  23.50
+|   |   |   |   |--- class: 1
+|   |   |--- numeric__NumCompaniesWorked >  8.50
+|   |   |   |--- numeric__MonthlyRate <= 14485.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- numeric__MonthlyRate >  14485.50
+|   |   |   |   |--- class: 1
+|--- numeric__YearsAtCompany >  2.50
+|   |--- categorical__OverTime_Yes <= 0.50
+|   |   |--- numeric__WorkLifeBalance <= 1.50
+|   |   |   |--- numeric__StockOptionLevel <= 0.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- numeric__StockOptionLevel >  0.50
+|   |   |   |   |--- class: 0
+|   |   |--- numeric__WorkLifeBalance >  1.50
+|   |   |   |--- numeric__NumCompaniesWorked <= 4.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- numeric__NumCompaniesWorked >  4.50
+|   |   |   |   |--- class: 0
+|   |--- categorical__OverTime_Yes >  0.50
+|   |   |--- numeric__JobLevel <= 1.50
+|   |   |   |--- numeric__NumCompaniesWorked <= 0.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- numeric__NumCompaniesWorked >  0.50
+|   |   |   |   |--- class: 1
+|   |   |--- numeric__JobLevel >  1.50
+|   |   |   |--- categorical__JobRole_Sales Executive <= 0.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- categorical__JobRole_Sales Executive >  0.50
+|   |   |   |   |--- class: 1
